@@ -1,0 +1,31 @@
+body{
+    background-color: #474E68;
+    margin: 0;
+}
+
+.leftMenu{
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #404258;
+    position: fixed;
+    height: 100%;
+}
+
+.rightPart{
+    margin-left: 15%;
+    padding: 1px 16px;
+}
+
+.box{
+    background-color: #6B728E;
+    height: 100px;
+    width: 100px;
+    margin: 15px;
+}
+
+
+/* #404258
+#474E68
+#50577A
+#6B728E */
