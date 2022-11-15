@@ -1,31 +1,113 @@
-body{
+html, body{
     background-color: #474E68;
     margin: 0;
-}
-
-.leftMenu{
-    margin: 0;
-    padding: 0;
-    width: 15%;
-    background-color: #404258;
-    position: fixed;
+    font-size: 32px;
+    font-weight: bold;
     height: 100%;
 }
 
-.rightPart{
-    margin-left: 15%;
-    padding: 1px 16px;
-}
-
 .box{
-    background-color: #6B728E;
-    height: 100px;
-    width: 100px;
+    background-color: #808ab1;
+    height: 200px;
+    width: 200px;
     margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.box_small{
+    background-color: #808ab1;
+    height: 50px;
+    width: 50px;
+    margin: 5px 0 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* #404258
-#474E68
-#50577A
-#6B728E */
+/* 1 */
+.justBoxes{
+    padding: 15px;
+}
+
+/* 2 */
+.centeredObjects{
+    height: 100%;
+    display: flex;
+    align-items: center;
+        /* 
+        align-items:
+        stretch	    Default. Items are stretched to fit the container	
+        center	    Items are positioned at the center of the container	
+        flex-start	Items are positioned at the beginning of the container	
+        flex-end	Items are positioned at the end of the container	
+        baseline	Items are positioned at the baseline of the container	
+        initial	    Sets this property to its default value.	
+        inherit	    nherits this property from its parent element.
+        */
+    justify-content: center;
+        /* 
+        justify-content:
+        flex-start	    Default value. Items are positioned at the beginning of the container	
+        flex-end	    Items are positioned at the end of the container	
+        center	        Items are positioned in the center of the container	
+        space-between	Items will have space between them	
+        space-around	Items will have space before, between, and after them	
+        space-evenly	Items will have equal space around them	
+        initial	        Sets this property to its default value. 
+        inherit         Inherits this property from its parent element.
+        */
+}
+
+/* 3 */
+.centeredObjectsWrapped{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+        /* nowrap | wrap | wrap-reverse*/
+}
+
+/* 4 */
+.centeredObjectsColumnWrapped{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+        /* 
+        flex-flow: [flex-direction] [flex-wrap]
+        
+        flex-direction	
+        Possible values:
+            row
+            row-reverse
+            column
+            column-reverse
+            initial
+            inherit
+
+        Default value is "row".
+        Specifying the direction of the flexible items
+
+        flex-wrap	
+        Possible values:
+            nowrap
+            wrap
+            wrap-reverse
+            initial
+            inherit
+        Default value is "nowrap".
+        Specifying whether the flexible items should wrap or not 
+        */
+}
+
+/* 5 */
+.positionFixedLikeMediaOnRight{
+    position: fixed;
+    top: 50%;
+    margin-top: -100px;
+    right: 0;
+}
