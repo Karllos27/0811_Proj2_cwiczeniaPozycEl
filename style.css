@@ -17,7 +17,7 @@ html, body{
 }
 
 .box_small{
-    background-color: #808ab1;
+    background-color: #5f7cee;
     height: 50px;
     width: 50px;
     margin: 5px 0 5px 0;
@@ -26,12 +26,38 @@ html, body{
     align-items: center;
 }
 
-/* 1 */
+.box_small_wide{
+    background-color: #5f7cee;
+    height: 50px;
+    width: 150px;
+    margin: 5px 0 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball_small{
+    background-color: #5f7cee;
+    border-radius: 50%;
+    height: 70px;
+    width: 70   px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball_small:hover {
+    background-color: aqua;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* 1, 6 */
 .justBoxes{
     padding: 15px;
 }
 
-/* 2 */
+/* 2, 8 */
 .centeredObjects{
     height: 100%;
     display: flex;
@@ -110,4 +136,22 @@ html, body{
     top: 50%;
     margin-top: -100px;
     right: 0;
+}
+
+/* 7 */
+.box .box_small_wide{
+    margin: 5px;
+}
+
+.columnView {
+    flex-direction: column;
+}
+
+/* 8 */
+
+.twoXtwoGrid {
+    display:grid;
+    grid-template-columns: 70px 70px;
+    grid-template-rows: 70px 70px;
+    grid-gap: 10px;
 }
